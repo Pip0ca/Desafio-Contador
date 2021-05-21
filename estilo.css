@@ -1,3 +1,8 @@
+@import url(https://fonts.google.com/specimen/Roboto#standard-styles);
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
 body{
   background: black; /*fundo preto*/
   margin-top: 15%;/*ajuste verticalmente "meio"*/
@@ -7,11 +12,37 @@ color:#21EB00; /*cor do titulo"Contador"*/
 }
 header h1{
   text-align: center;/*deixar  o texti horizontalmente no meio*/ 
+  margin-bottom: 0;
 }
 section{
   text-align: center;/*deixar  o texti horizontalmente no meio*/ 
- 
+  display: grid; /*colocar  cada elemento um em baixo do outro- coluna*/
+  justify-content: center /*centraliza os elementos em coluna no centro */
 }
-p{
+section p{
   color: white;/*cor da letra "Informe uma data"*/
+  margin-bottom: 8px ; /*distanciamento até o input da data*/
+  font-size: 17px; /* tamanho da fonte */
+}
+section input{
+  margin-bottom:  10px; /*distanciamento até o botão*/
+  border-radius: 15px; /*borda redonda*/
+  padding: 10px; /*tamanho do input*/
+  width: 200px; /*largura do inpu*/
+  background-color: #191A16;/*cor de fundo*/
+  border: none;/*sem cor de borda*/
+  color: white; /*cor da letra*/
+  font-size: 15px;/*tamanho da letra*/ 
+}
+section button{
+  border-radius: 15px; /*borda redonda*/
+  padding: 10px;/*tamanho do botão*/
+  background-color: #21EB00; /*cor de fundo*/
+  border: none;/*sem cor de borda*/
+  font-size: 16px; /*tamanho da fonte*/
+  font-weight: bold; /*fonte em negrito*/
+  transition: filter 0.5s; /*efeito ao colocar o mouse em cima*/
+}
+section button:hover {
+  filter: brightness(0.7); /*efeito cor mudando ao colocar o mouse em cima*/
 }
