@@ -1,18 +1,17 @@
 body{
-  background: black;
-  margin-top: 15%;
+  background: black; /*fundo preto*/
+  margin-top: 15%;/*ajuste verticalmente "meio"*/
 }
 header{
-color:#21EB00;
-margin: auto;
+color:#21EB00; /*cor do titulo"Contador"*/ 
 }
 header h1{
-  text-align: center;
+  text-align: center;/*deixar  o texti horizontalmente no meio*/ 
 }
 section{
-  text-align: center;
+  text-align: center;/*deixar  o texti horizontalmente no meio*/ 
  
 }
 p{
-  color: white;
+  color: white;/*cor da letra "Informe uma data"*/
 }
