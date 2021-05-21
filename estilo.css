@@ -1,0 +1,18 @@
+body{
+  background: black;
+  margin-top: 15%;
+}
+header{
+color:#21EB00;
+margin: auto;
+}
+header h1{
+  text-align: center;
+}
+section{
+  text-align: center;
+ 
+}
+p{
+  color: white;
+}
