@@ -1,19 +1,16 @@
-var date= document.getElementById("dateCont")
-var contagem = document.querySelector(".secund")
-
-date.addEventListener('click', function() {
-  if(secund.style.display === 'block'){
-secund.style.display = 'none'
-  }else {
-    secund.style.display='block'
-  }
-
-})
+let btnCont = document.getElementById('btnCont') //reconhecendo o botão btnCont no Java
+let btnRen = document.getElementById('btnRen')//reconhecendo o botão btnRen no Java
+let secund = document.querySelector('.secund')//reconhecendo a div .secund no Java
+let inicial = document.querySelector('.inicial')//reconhecendo a div inicial no Java
 
 function contagem(){
+  inicial.style.display = 'none'
+  secund.style.display = 'block'
+  // Ao clicar em contagem o div inicial fica invisivel e a div secund fica visivel
+}
 
-  var dateAct = new Date()
-  var hour = dateAct.getHours()
-  var min = dateAct.getMinutes()
-  var sec = dateAct.getSeconds()
+function reninciar(){
+  inicial.style.display = 'block'
+  secund.style.display = 'none'
+  // Ao clicar em contagem o div inicial fica visivel e a div secund fica invisivel
 }
