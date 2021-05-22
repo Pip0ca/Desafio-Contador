@@ -16,13 +16,36 @@
    <section>
       <p>Informe uma data</p>
      <input type="date" name="dateCont" id="dateCont">
-     <button onclick="contagem()">Iniciar contagem</button>
+     <button  id ="btnCont" onclick="contagem()">Iniciar contagem</button>
     </section>
   </div>
 
   <div class= "secund">
-
-    <p>teste teste</p>
+    <div id = "top">
+      <h1>Contador</h1>
+      <button id="btnRen"onclick="reninciar()">Reninciar</button>
+    </div>
+    <div id = "corp">
+    <p>Faltam</p>
+    <ul class="countdown">
+      <li>
+        <span>00</span>
+        <div>Dias</div>
+      </li>
+      <li>
+        <span>00</span>
+        <div>Horas</div>
+      </li>
+      <li>
+        <span>00</span>
+        <div>Minutos</div>
+      </li>
+      <li>
+        <span>00</span>
+        <div>Segundos</div>
+      </li>
+    </ul>
+  </div>
   </div>
 
   <script src="main.js"></script>
