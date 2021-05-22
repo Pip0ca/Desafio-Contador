@@ -5,14 +5,17 @@
 }
 body{
   background: black; /*fundo preto*/
+
+}
+.inicial{
   margin-top: 15%;/*ajuste verticalmente "meio"*/
+  display: block;/*ao iniciar a aplicação a div está visivel*/
 }
-.inicial header{
-color:#21EB00; /*cor do titulo"Contador"*/ 
-}
+
 .inicial header h1{
+  color:#21EB00; /*cor do titulo"Contador"*/ 
   text-align: center;/*deixar  o texti horizontalmente no meio*/ 
-  margin-bottom: 0;
+  margin-bottom: 0;/*melhora a margem para com p*/
 }
 .inicial section{
   text-align: center;/*deixar  o texti horizontalmente no meio*/ 
@@ -48,6 +51,37 @@ color:#21EB00; /*cor do titulo"Contador"*/
 }
 
 .secund{
-background: blue;
-display:none;
+display:none;/*ao iniciar a aplicação a div invisivel*/
+}
+.secund #top{
+display: inline;
+margin-bottom: 0px;
+}
+.secund #top h1{
+  color:#21EB00; /*cor do titulo"Contador"*/ 
+}
+.secund #top button{
+  border-radius: 15px; /*borda redonda*/
+  padding: 10px;/*tamanho do botão*/
+  background-color: #21EB00; /*cor de fundo*/
+  border: none;/*sem cor de borda*/
+  font-size: 16px; /*tamanho da fonte*/
+  font-weight: bold; /*fonte em negrito*/
+  transition: filter 0.5s; /*efeito ao colocar o mouse em cima*/
+}
+.secund #corp{
+  text-align: center;/*deixar  o texti horizontalmente no meio*/ 
+  margin-top: 10%;/*ajuste verticalmente "meio"*/
+}
+.secund p{
+  color: #191A16;
+  font-size: 50px;
+  font-weight: bold
+}
+.secund .countdown span{
+  font-size: 60px;
+color: white;
+}
+.secund .countdown div{
+  color: #21EB00;
 }
