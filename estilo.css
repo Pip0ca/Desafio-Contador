@@ -7,24 +7,24 @@ body{
   background: black; /*fundo preto*/
   margin-top: 15%;/*ajuste verticalmente "meio"*/
 }
-header{
+.inicial header{
 color:#21EB00; /*cor do titulo"Contador"*/ 
 }
-header h1{
+.inicial header h1{
   text-align: center;/*deixar  o texti horizontalmente no meio*/ 
   margin-bottom: 0;
 }
-section{
+.inicial section{
   text-align: center;/*deixar  o texti horizontalmente no meio*/ 
   display: grid; /*colocar  cada elemento um em baixo do outro- coluna*/
   justify-content: center /*centraliza os elementos em coluna no centro */
 }
-section p{
+.inicial section p{
   color: white;/*cor da letra "Informe uma data"*/
   margin-bottom: 8px ; /*distanciamento até o input da data*/
   font-size: 17px; /* tamanho da fonte */
 }
-section input{
+.inicial section input{
   margin-bottom:  10px; /*distanciamento até o botão*/
   border-radius: 15px; /*borda redonda*/
   padding: 10px; /*tamanho do input*/
@@ -34,7 +34,7 @@ section input{
   color: white; /*cor da letra*/
   font-size: 15px;/*tamanho da letra*/ 
 }
-section button{
+.inicial section button{
   border-radius: 15px; /*borda redonda*/
   padding: 10px;/*tamanho do botão*/
   background-color: #21EB00; /*cor de fundo*/
@@ -43,6 +43,11 @@ section button{
   font-weight: bold; /*fonte em negrito*/
   transition: filter 0.5s; /*efeito ao colocar o mouse em cima*/
 }
-section button:hover {
+.inicial section button:hover {
   filter: brightness(0.7); /*efeito cor mudando ao colocar o mouse em cima*/
+}
+
+.secund{
+background: blue;
+display:none;
 }
