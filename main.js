@@ -6,19 +6,21 @@ function contagem(){
   secund.style.display = 'block'
 
   let btnCont = document.getElementById('btnCont') //reconhecendo o botão btnCont no Java
-  let DataPassada = document.getElementById('date').value 
+  let DataPassada = parseFloat( document.getElementById('dateCont'))
+  console.log(typeof(DataPassada))
+
   let diaSp = document.getElementById('diaSp')
   let horaSp = document.getElementById('horaSp')
   let minSp = document.getElementById('minSp')
   let segSp = document.getElementById('segSp')
 
-  // Ao clicar em contagem o div inicial fica invisivel e a div secund fica visivel
- var DataIn = new Date(inicial)
- var date = new Date();
 	//data atual formatada para MM/DD/AAAA
-  DataHoje = new Date(((date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear()));
- 
-  var difTempo = Math.abs(DataHoje.getTime()-DataIn.getTime())
+ let  date  = new Date()
+ let  DataHoje = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear()
+ console.log(typeof(DataHoje))
+ console.log(DataHoje)
+
+  var difTempo = Math.abs(DataHoje.getTime()-DataPassada.getTime())
   var difDias = Math.floor(difTempo/(1000*3600*24))
   diaSp.innerHTML = difDias
   var difHour = Math.floor(difTempo/(1000*3600))
