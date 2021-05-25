@@ -22,14 +22,14 @@ function contagem(){
 
 //  var difTempo = Math.abs(DataHoje.getTime()-DataPassada.getTime())
   var  difTempo = Math.abs(date.getTime(DataHoje)-date.getTime(DataPassada))
- var difDias = Math.floor(difTempo/(1000*3600*24))
-  diaSp.innerHTML = difDias
+  var difDias = Math.floor(difTempo/(1000*3600*24))
+  diaSp.innerText = difDias
   var difHour = Math.floor(difTempo/(1000*3600))
-  horaSp.innerHTML = difHour
+  horaSp.innerText = difHour
   var difMin = Math.floor(difTempo/(1000*60))
-  minSp.innerHTML = difMin
+  minSp.innerText = difMin
   var difSeg = Math.floor(difTempo/(1000))
-  segSp.innerHTML = difSeg
+  segSp.innerText = difSeg
 
 } 
 
