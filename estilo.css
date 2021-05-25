@@ -54,13 +54,16 @@ body{
 display:none;/*ao iniciar a aplicação a div invisivel*/
 }
 .secund #top{
-display: inline;
-margin-bottom: 0px;
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+justify-content: space-between;
 }
 .secund #top h1{
   color:#21EB00; /*cor do titulo"Contador"*/ 
 }
 .secund #top button{
+  float:right;
   border-radius: 15px; /*borda redonda*/
   padding: 10px;/*tamanho do botão*/
   background-color: #21EB00; /*cor de fundo*/
