@@ -90,13 +90,11 @@ justify-content: space-between;
  justify-content: center;
 }
 .secund .countdown span{
-  font-size: 60px;
-color: white;
+  font-size: 70px;
+ color: white;
+ margin-right: 40px;
 }
 .secund .countdown div{
   color: #21EB00;
-}
-.secund .countdown li{
-  margin-top: 0px;
-  margin-right: 25px;
+  margin-right: 40px;
 }
