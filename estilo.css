@@ -60,6 +60,7 @@ align-items: center;
 justify-content: space-between;
 }
 .secund #top h1{
+  margin: 10px;
   color:#21EB00; /*cor do titulo"Contador"*/ 
 }
 .secund #top button{
@@ -71,6 +72,7 @@ justify-content: space-between;
   font-size: 16px; /*tamanho da fonte*/
   font-weight: bold; /*fonte em negrito*/
   transition: filter 0.5s; /*efeito ao colocar o mouse em cima*/
+  margin: 10px
 }
 .secund #corp{
   text-align: center;/*deixar  o texti horizontalmente no meio*/ 
@@ -79,10 +81,13 @@ justify-content: space-between;
 .secund p{
   color: #191A16;
   font-size: 50px;
-  font-weight: bold
+  font-weight: bold;
+ margin-bottom: 0px;
 }
 .secund .countdown{
-  display: grid;
+  display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
 }
 .secund .countdown span{
   font-size: 60px;
@@ -90,4 +95,8 @@ color: white;
 }
 .secund .countdown div{
   color: #21EB00;
+}
+.secund .countdown li{
+  margin-top: 0px;
+  margin-right: 25px;
 }
