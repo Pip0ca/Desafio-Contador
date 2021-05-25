@@ -20,8 +20,9 @@ function contagem(){
  console.log(typeof(DataHoje))
  console.log(DataHoje)
 
-  var difTempo = Math.abs(DataHoje.getTime()-DataPassada.getTime())
-  var difDias = Math.floor(difTempo/(1000*3600*24))
+//  var difTempo = Math.abs(DataHoje.getTime()-DataPassada.getTime())
+  var  difTempo = Math.abs(date.getTime(DataHoje)-date.getTime(DataPassada))
+ var difDias = Math.floor(difTempo/(1000*3600*24))
   diaSp.innerHTML = difDias
   var difHour = Math.floor(difTempo/(1000*3600))
   horaSp.innerHTML = difHour
