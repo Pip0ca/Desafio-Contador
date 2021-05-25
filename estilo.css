@@ -1,17 +1,15 @@
-@import url(https://fonts.google.com/specimen/Roboto#standard-styles);
+@import url(https://fonts.google.com/specimen/Roboto#standard-styles);/*pegando a font Roboto do google*/
 
 *{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif; /*aplicando a font Roboto em todas as letras do programa*/
 }
 body{
   background: black; /*fundo preto*/
-
 }
 .inicial{
   margin-top: 15%;/*ajuste verticalmente "meio"*/
   display: block;/*ao iniciar a aplicação a div está visivel*/
 }
-
 .inicial header h1{
   color:#21EB00; /*cor do titulo"Contador"*/ 
   text-align: center;/*deixar  o texti horizontalmente no meio*/ 
@@ -49,22 +47,19 @@ body{
 .inicial section button:hover {
   filter: brightness(0.7); /*efeito cor mudando ao colocar o mouse em cima*/
 }
-
 .secund{
 display:none;/*ao iniciar a aplicação a div invisivel*/
 }
 .secund #top{
-display: flex;
-flex-flow: row wrap;
-align-items: center;
-justify-content: space-between;
+display: flex;/*deixa o bloco com h1 e button dinamicos- mesma linha*/
+flex-flow: row wrap; /*devido ter display:none foi necessario para fazer display flex funcionar nesse bloco*/
+justify-content: space-between; /*deixou h1 e button em lados diferentes */
 }
 .secund #top h1{
-  margin: 10px;
+  margin: 10px; /*margem para h1 não ficar grudado no canto superior e superior esquerdo*/
   color:#21EB00; /*cor do titulo"Contador"*/ 
 }
 .secund #top button{
-  float:right;
   border-radius: 15px; /*borda redonda*/
   padding: 10px;/*tamanho do botão*/
   background-color: #21EB00; /*cor de fundo*/
@@ -72,29 +67,29 @@ justify-content: space-between;
   font-size: 16px; /*tamanho da fonte*/
   font-weight: bold; /*fonte em negrito*/
   transition: filter 0.5s; /*efeito ao colocar o mouse em cima*/
-  margin: 10px
+  margin: 10px; /*margem para button não ficar grudado no cano superior e superior direito*/
 }
 .secund #corp{
   text-align: center;/*deixar  o texti horizontalmente no meio*/ 
   margin-top: 10%;/*ajuste verticalmente "meio"*/
 }
 .secund p{
-  color: #191A16;
-  font-size: 50px;
-  font-weight: bold;
- margin-bottom: 0px;
+  color: #191A16; /*cor da fonte p*/ 
+  font-size: 50px; /*tamanho da fonte*/
+  font-weight: bold; /*fonte em negrito*/
+ margin-bottom: 0px; /*sem margem para com o bloco de maixo*/
 }
 .secund .countdown{
-  display: flex;
- flex-flow: row wrap;
- justify-content: center;
+  display: flex; /*deixa o bloco com h1 e button dinamicos- mesma linha*/
+ flex-flow: row wrap;/*devido ter display:none foi necessario para fazer display flex funcionar nesse bloco*/
+ justify-content: center;/*para deixar os elementos do bloco no meio*/
 }
 .secund .countdown span{
-  font-size: 70px;
- color: white;
- margin-right: 40px;
+  font-size: 70px;/*tamanho da fonte*/
+ color: white;/*cor da fonte*/
+ margin-right: 40px;/* espaçamento para os span não ficaram perto muito um do outro */
 }
 .secund .countdown div{
-  color: #21EB00;
-  margin-right: 40px;
+  color: #21EB00; /*cor da fonte*/
+  margin-right: 40px;/* espaçamento para os span não ficaram perto muito um do outro- igual o expaçamento do span para ficar alinhado */
 }
