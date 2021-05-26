@@ -44,5 +44,5 @@ function reninciar(){
   initial.style.display = 'block';
   secondary.style.display = 'none';
   // Ao clicar em contagem o div inicial fica visivel e a div secund fica invisivel
-  clearInterval() ;
+clearInterval() // arrumar.
 }
