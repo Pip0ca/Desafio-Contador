@@ -1,42 +1,49 @@
-let secund = document.querySelector('.secund')//reconhecendo a div .secund no Java
-let inicial = document.querySelector('.inicial')//reconhecendo a div inicial no Java
+let secondary
+ = document.querySelector('.secund');//reconhecendo a div .secund no Java
+let initial = document.querySelector('.inicial');//reconhecendo a div inicial no Java
 
-function contagem(){
-  inicial.style.display = 'none'
-  secund.style.display = 'block'
+function contagem() {
+	initial.style.display = "none";
+	secondary.style.display = "block";
 
-  let btnCont = document.getElementById('btnCont') //reconhecendo o botão btnCont no Java
-  let DataPassada = parseFloat( document.getElementById('dateCont'))
-  console.log(typeof(DataPassada))
+	let inputData = document.getElementById("dateCont");
 
-  let diaSp = document.getElementById('diaSp')
-  let horaSp = document.getElementById('horaSp')
-  let minSp = document.getElementById('minSp')
-  let segSp = document.getElementById('segSp')
+	let dateToReach = new Date(inputData.value);
 
-	//data atual formatada para MM/DD/AAAA
- let  date  = new Date()
- let  DataHoje = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear()
- console.log(typeof(DataHoje))
- console.log(DataHoje)
+	let MsDay = 86400000;
+	let Hours = 24;
+	let Minutes = 60;
+	let Seconds = 60;
 
-//  var difTempo = Math.abs(DataHoje.getTime()-DataPassada.getTime())
-  var  difTempo = Math.abs(date.getTime(DataHoje)-date.getTime(DataPassada))
-  var difDias = Math.floor(difTempo/(1000*3600*24))
-  diaSp.innerText = difDias
-  var difHour = Math.floor(difTempo/(1000*3600))
-  horaSp.innerText = difHour
-  var difMin = Math.floor(difTempo/(1000*60))
-  minSp.innerText = difMin
-  var difSeg = Math.floor(difTempo/(1000))
-  segSp.innerText = difSeg
+	setInterval(() => {
+		let actualDate = new Date();
+		let time = Math.abs(dateToReach.getTime() - actualDate.getTime());
+		let Left = (time / MsDay).toString().split(".");
+		let DaysLeft = parseInt(Left[0]);
+		let HoursLeft = Hours - actualDate.getHours();
+		let MinutesLeft = Minutes - actualDate.getMinutes();
+		let SecondsLeft = Seconds - actualDate.getSeconds();
 
-} 
+		document.getElementById("diaSp").innerText =
+			DaysLeft < 10 ? `0${DaysLeft}` : DaysLeft;
+
+		document.getElementById("horaSp").innerText =
+			HoursLeft < 10 ? `0${HoursLeft}` : HoursLeft;
+
+		document.getElementById("minSp").innerText =
+			MinutesLeft < 10 ? `0${MinutesLeft}` : MinutesLeft;
+
+		document.getElementById("segSp").innerText =
+			SecondsLeft < 10 ? `0${SecondsLeft}` : SecondsLeft;
+
+		console.log([SecondsLeft, actualDate.getSeconds()]);
+	}, 1000);
+}
 
 function reninciar(){
   let btnRen = document.getElementById('btnRen')//reconhecendo o botão btnRen no Java
 
-  inicial.style.display = 'block'
-  secund.style.display = 'none'
+  initial.style.display = 'block'
+  secondary.style.display = 'none'
   // Ao clicar em contagem o div inicial fica visivel e a div secund fica invisivel
 }
